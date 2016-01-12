@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension point="org.eclipse.jdt.ui.javaCompletionProposalComputer"
+   		id="blueriqmetamodel_category"
+   		name="Blueriq Metamodel Proposals">
+   		<proposalCategory/>
+ 	</extension>
+
+ 	<extension
+        id="blueriqmetamodel_proposal"
+        name="Blueriq Metamodel Proposals"
+        point="org.eclipse.jdt.ui.javaCompletionProposalComputer">
+   		<javaCompletionProposalComputer
+      		class="nl.rdh.completion.MetamodelProposalComputer"
+      		categoryId="nl.rdh.completion.blueriqmetamodel_category"
+      		activate="true">
+   		</javaCompletionProposalComputer>
+ 	</extension>
+
+</plugin>
